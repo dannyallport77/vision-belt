@@ -1,0 +1,19 @@
+## requirements.txt
+
+```text
+# Base dependencies
+pyrealsense2
+opencv-python
+numpy
+PyYAML
+
+# Future integrations
+bleak           # Bluetooth Low Energy client
+pyttsx3         # TTS engine (offline)
+gTTS            # TTS via Google API (optional)
+websocket-client  # WebSocket publishing
+
+# Development tools
+pytest          # Unit testing framework
+flake8          # Linting
+```
