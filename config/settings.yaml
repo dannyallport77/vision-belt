@@ -1,0 +1,37 @@
+Below are the sample configuration and a corresponding `requirements.txt` to get you started.
+
+---
+
+## config/settings.yaml
+
+```yaml
+# config/settings.yaml
+
+# Depth camera settings
+depth:
+  width: 640
+  height: 480
+  fps: 30
+  scale: 0.001  # depth unit (mm) to meters
+
+# Color camera settings
+color:
+  width: 640
+  height: 480
+  fps: 30
+
+# Feedback thresholds
+feedback:
+  distance_threshold: 1.5  # meters; trigger feedback within this range
+
+# BLE settings (placeholder)
+ble:
+  device_name: "VisionBeltMotor"
+  service_uuid: "00001234-0000-1000-8000-00805f9b34fb"
+  char_uuid: "00005678-0000-1000-8000-00805f9b34fb"
+
+# WebSocket settings (placeholder)
+websocket:
+  url: "ws://localhost:8765"
+  reconnect_interval: 5  # seconds
+```
